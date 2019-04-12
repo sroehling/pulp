@@ -19,9 +19,10 @@
             <li><a href="{{ .URL }}" aria-label="{{ .Name }}">{{ .Pre }}{{ .Name}}</a></li>
             {{ end }}
           </ul>
-         <p>
-          {{ .Site.Params.description }}
-        </p>
+         <div id="homepageContent">
+  			 <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
+			 <p>{{.Content}}</p>
+		 </div>
         <!-- navigation -->
         <nav>
           <ul>
