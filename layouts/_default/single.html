@@ -1,8 +1,6 @@
 {{ define "main"}}
   <h1>{{ .Title }}</h1>
   {{ partial "header.html" . }}
-  <!-- date -->
-  <p class="date">{{ .Date.Format .Site.Params.singlePageDateFormat }}</p>
   <!-- content -->
   <div id="contentBody">
     {{ .Content }}
