@@ -14,14 +14,12 @@
           <h1 class="author">{{ .Site.Params.Author }}</h1>
         </header>
         <!-- description -->
-        <nav>
-          <ul>
+          <ul id="siteLinks">
             {{ range .Site.Menus.links }}
             <li><a href="{{ .URL }}" aria-label="{{ .Name }}">{{ .Pre }}{{ .Name}}</a></li>
             {{ end }}
           </ul>
-        </nav>
-        <p>
+         <p>
           {{ .Site.Params.description }}
         </p>
         <!-- navigation -->
