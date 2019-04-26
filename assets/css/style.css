@@ -65,7 +65,7 @@ footer {
 }
 
 #profile {
-  max-width: 600px;
+  max-width: 720px;
   /* min-width: 300px; */
 }
 
@@ -82,7 +82,7 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
     max-width: 400px;
-    margin: 20px auto;
+    margin: 5px auto;
     padding: 0;
     list-style: none;
 }
@@ -177,8 +177,6 @@ nav ul {
 }
 
 #homepageContent {
-    max-width: 450px;
-    text-align: center;
 	margin-top:30px;
 	margin-bottom:30px;
 }
