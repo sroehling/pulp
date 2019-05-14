@@ -1,4 +1,13 @@
 {{ define "main"}}
+
+	<ul id="siteLinks">
+       <li><a href="/" aria-label="Home">Home</a></li>
+       {{ range .Site.Menus.links }}
+            <li><a href="{{ .URL }}" aria-label="{{ .Name }}">{{ .Pre }}{{ .Name}}</a></li>
+       {{ end }}
+     </ul>
+
+
   <h1>{{ .Title }}</h1>
   {{ partial "header.html" . }}
   <!-- content -->

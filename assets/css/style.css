@@ -87,6 +87,16 @@ nav ul {
     list-style: none;
 }
 
+/* Don't display the site links when printing */
+@media print {
+	#siteLinks {
+		display: none;
+	}
+}
+
+
+
+
 /* Contents List */
 #searchBox {
   position: relative;
@@ -94,6 +104,7 @@ nav ul {
   height: 30px;
   margin: 20px auto;
 }
+
 
 #searchBox #searchBoxInput {
   position: absolute;
