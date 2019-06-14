@@ -19,9 +19,21 @@
             <li><a href="{{ .URL }}" aria-label="{{ .Name }}">{{ .Pre }}{{ .Name}}</a></li>
             {{ end }}
           </ul>
+		  <div>
+			  <img src="{{ .Site.Params.SplashImage }}" alt="splash-image">
+		  </div>
          <div id="homepageContent">
   			 <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
 			 <p>{{.Content}}</p>
+		 </div>
+		 Most Recent Posts:
+		 <div id="homepagePosts">
+			 <ul>
+				 {{ range first 5 (where .Site.RegularPages "Section" "posts") }}
+			            <li><a href="{{ .Permalink }}">{{ .Title }}</a>
+			            <time>({{ .Date.Format "Jan 2, 2006" }}</time>)<BR>
+				 {{ end }}
+			  </ul>
 		 </div>
         <!-- navigation -->
         <nav>

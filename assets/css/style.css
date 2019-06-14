@@ -196,5 +196,11 @@ nav ul {
 
 #homepageContent {
 	margin-top:30px;
+	margin-bottom:20px;
+	text-align: left;
+}
+
+#homepagePosts {
+	text-align: left;
 	margin-bottom:30px;
 }
