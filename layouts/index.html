@@ -19,9 +19,11 @@
             <li><a href="{{ .URL }}" aria-label="{{ .Name }}">{{ .Pre }}{{ .Name}}</a></li>
             {{ end }}
           </ul>
+          <!-- No Splash Image
 		  <div>
 			  <img src="{{ .Site.Params.SplashImage }}" alt="splash-image">
 		  </div>
+      -->
          <div id="homepageContent">
   			 <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
 			 <p>{{.Content}}</p>
