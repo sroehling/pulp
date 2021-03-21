@@ -1,6 +1,9 @@
 {{ define "main"}}
   {{ partial "header.html" . }}
   <!-- search box -->
+
+  {{ partial "sitelinks.html" . }}
+
   <div id="searchBox">
     <input type="text" id="searchBoxInput" placeholder="Search..." />
     <img id="searchBoxIcon" src="{{ .Site.BaseURL }}/img/search.png" />
