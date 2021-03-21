@@ -1,8 +1,10 @@
 {{ define "main"}}
-  {{ partial "header.html" . }}
-  <!-- search box -->
 
-  {{ partial "sitelinks.html" . }}
+{{ partial "sitelinks.html" . }}
+<h1>{{ .Title }}</h1>
+{{ partial "header.html" . }}
+
+  <!-- search box -->
 
   <div id="searchBox">
     <input type="text" id="searchBoxInput" placeholder="Search..." />
